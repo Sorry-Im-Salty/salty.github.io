@@ -28,11 +28,15 @@ var SateliteStyle = L.tileLayer('mapStyles/styleSatelite/{z}/{x}/{y}.jpg', {minZ
 
 var CoordsGroup = L.layerGroup();
 var PortofLS = L.layerGroup();
+var WestLSDocks = L.layerGroup();
+var LSMarine = L.layerGroup();
 var PortofRocksWood = L.layerGroup();
 var CatfishView = L.layerGroup();
 
 var Icons = {
     "Port of Los Santos" :PortofLS,
+    "West LS Docks" :WestLSDocks,
+    "Los Santos Marine" :LSMarine,
     "Catfish View" :CatfishView,
     "Port of Roxwood": PortofRocksWood,
 	"Coords" :CoordsGroup,
@@ -98,12 +102,68 @@ L.polygon([
     [-3133.232, 459.097],
     [-3128.659, 440.999],
     [-2938.110, 444.015],
+    [-2933.537, 573.721],
+    [-2880.183, 570.705],
+    [-2802.439, 439.491],
+    [-2715.549, 442.507],
+    [-2665.244, 751.689],
+    [-2925.915, 756.214],
     [-2927.439, 777.329],
     [-2907.622, 778.837]
-
-], {color: "#FF8000", weight: 2}).addTo(Icons["Port of Los Santos"])
+], {color: "#FF8000", weight: 2}).addTo(Icons["Port of Los Santos"]).bindPopup("Port of Los Santos");
 L.marker([-3044.817,997.527]).addTo(Icons["Port of Los Santos"]).bindPopup("Port of Los Santos Crate");
 L.marker([-3342.073,1214.708]).addTo(Icons["Port of Los Santos"]).bindPopup("Port of Los Santos Crate");
+
+// West LS Docks
+L.polygon([
+    [-2707.859, 385.828],
+    [-2808.175, 389.970],
+    [-2857.010, 336.709],
+    [-2858.674, 323.141],
+    [-2965.688, 321.600],
+    [-3277.832, 314.107],
+    [-3279.420, 302.032],
+    [-3352.543, 303.524],
+    [-3354.019, 104.377],
+    [-2820.461, 107.436],
+    [-2773.384, 154.133],
+    [-2773.237, 185.805],
+    [-2683.290, 187.429],
+    [-2692.425, 301.990]
+], {color: "#FF8000", weight: 2}).addTo(Icons["West LS Docks"])
+
+// Los Santos Marine
+L.polygon([
+    [-2679.726, 141.060],
+    [-2710.976, 139.551],
+    [-2768.902, 80.696],
+    [-2765.854, 2.259],
+    [-2753.659, -0.677],
+    [-2753.659, -98.801],
+    [-2726.601, -98.280],
+    [-2727.744, -157.537],
+    [-2736.890, -159.098],
+    [-2733.841, -196.742],
+    [-2697.256, -195.310],
+    [-2698.780, -246.581],
+    [-2765.854, -315.968],
+    [-2872.942, -405.721],
+    [-2874.085, -420.005],
+    [-2956.402, -502.992],
+    [-2944.207, -513.583],
+    [-2826.448, -566.698],
+    [-2779.573, -521.024],
+    [-2768.902, -530.060],
+    [-2566.159, -329.529],
+    [-2445.732, -463.769],
+    [-2424.390, -444.118],
+    [-2559.299, -281.911],
+    [-2537.195, -263.092],
+    [-2456.402, -353.608],
+    [-2416.768, -321.923],
+    [-2627.896, -8.171],
+    [-2663.720, 77.756]
+], {color: "#FF8000", weight: 2}).addTo(Icons["Los Santos Marine"]).bindPopup("Los Santos Marine");
 
 // Catfish Docks
 

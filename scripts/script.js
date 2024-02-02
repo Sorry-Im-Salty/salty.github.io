@@ -32,6 +32,7 @@ var WestLSDocks = L.layerGroup();
 var LSMarine = L.layerGroup();
 var PortofRocksWood = L.layerGroup();
 var CatfishView = L.layerGroup();
+var WarehouseLocations = L.layerGroup();
 
 var Icons = {
     "Port of Los Santos" :PortofLS,
@@ -40,6 +41,7 @@ var Icons = {
     "Catfish View" :CatfishView,
     "Port of Roxwood": PortofRocksWood,
 	"Coords" :CoordsGroup,
+    "Warehouses" :WarehouseLocations,
 };
 
 var mymap = L.map('map', {
@@ -80,6 +82,13 @@ mymap.on('click', function (e) {
     mymap.removeLayer(azurirajmarker);
     
 });
+
+// Warehouse Locations
+
+L.marker([2822.561, -88.381]).addTo(Icons["Warehouses"]).bindPopup("Slovaks Warehouse");
+L.marker([-2304.726, 1086.028]).addTo(Icons["Warehouses"]).bindPopup("Sinners Warehouse");
+L.marker([6299.925, 0.648]).addTo(Icons["Warehouses"]).bindPopup("Blackhand Warehouse");
+L.marker([-1287.195, -335.726]).addTo(Icons["Warehouses"]).bindPopup("Ufasele Warehouse");
 
 // Port of Los Santos Crate Locations
 L.polygon([

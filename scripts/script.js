@@ -139,7 +139,7 @@ L.polygon([
     [-2773.237, 185.805],
     [-2683.290, 187.429],
     [-2692.425, 301.990]
-], {color: "#FF8000", weight: 2}).addTo(Icons["West LS Docks"]).bindPopup("West LS Docks")
+], {color: "#FF8000", weight: 4}).addTo(Icons["West LS Docks"]).bindPopup("West LS Docks")
 
 // Los Santos Marine
 L.polygon([
@@ -172,7 +172,7 @@ L.polygon([
     [-2416.768, -321.923],
     [-2627.896, -8.171],
     [-2663.720, 77.756]
-], {color: "#FF8000", weight: 2}).addTo(Icons["Los Santos Marine"]).bindPopup("Los Santos Marine");
+], {color: "#FF8000", weight: 4}).addTo(Icons["Los Santos Marine"]).bindPopup("Los Santos Marine");
 
 // Catfish Docks
 
@@ -181,8 +181,8 @@ L.polygon([
     [4436.890, 3828.427],
     [4423.171, 3750.000],
     [4528.354, 3743.967]
-], {color: "#FF8000", weight: 2}).addTo(Icons["Catfish View"]).bindPopup("Catfish View Docks");
+], {color: "#FF8000", weight: 4}).addTo(Icons["Catfish View"]).bindPopup("Catfish View Docks");
 
 L.marker([4479.573,3801.279]).addTo(Icons["Catfish View"]).bindPopup("Port of Los Santos Crate");
 
-// Port of RocksWood
+// Port of Roxwoods

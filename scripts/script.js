@@ -58,7 +58,6 @@ var mymap = L.map('map', {
 
 var layersControl = L.control.layers({ "Satelite": SateliteStyle,"Atlas": AtlasStyle,"Grid":GridStyle}, Icons).addTo(mymap);
 
-
 function customIcon(icon){
 	return L.icon({
 		iconUrl: `blips/${icon}.png`,
@@ -80,7 +79,6 @@ mymap.on('click', function (e) {
     marker = new L.marker([lat,lng]).addTo(Icons["Coords"]).bindPopup("<b>X: "+lng.toFixed(3)+" | Y: "+lat.toFixed(3)+"</b>");
     mymap.setView([lat, lng], zoom);
     mymap.removeLayer(azurirajmarker);
-    
 });
 
 // Warehouse Locations
@@ -119,7 +117,7 @@ L.polygon([
     [-2925.915, 756.214],
     [-2927.439, 777.329],
     [-2907.622, 778.837]
-], {color: "#FF8000", weight: 2}).addTo(Icons["Port of Los Santos"]).bindPopup("Port of Los Santos");
+], {color: "#FF8000", weight: 4}).addTo(Icons["Port of Los Santos"]).bindPopup("Port of Los Santos");
 L.marker([-3044.817,997.527]).addTo(Icons["Port of Los Santos"]).bindPopup("Port of Los Santos Crate");
 L.marker([-3342.073,1214.708]).addTo(Icons["Port of Los Santos"]).bindPopup("Port of Los Santos Crate");
 
@@ -183,6 +181,6 @@ L.polygon([
     [4528.354, 3743.967]
 ], {color: "#FF8000", weight: 4}).addTo(Icons["Catfish View"]).bindPopup("Catfish View Docks");
 
-L.marker([4479.573,3801.279]).addTo(Icons["Catfish View"]).bindPopup("Port of Los Santos Crate");
+L.marker([4479.573,3801.279]).addTo(Icons["Catfish View"]).bindPopup("Catfish View Crate");
 
 // Port of Roxwoods

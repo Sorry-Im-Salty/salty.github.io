@@ -13,7 +13,7 @@ loginButton.addEventListener("click", (e) => {
     if (username === "6=W&dDQkg`43" && password === ")2AXb00z37") {
         // If the credentials are valid, show an alert box and reload the page
         alert("You have successfully logged in.");
-        window.location.href = "https://spoonyyyyyyyy.github.io/main/index.html";
+        window.location.href = "https://spoonyyyyyyyy.github.io/main/map.html";
     } else {
         // Otherwise, make the login error message show (change its oppacity)
         loginErrorMsg.style.opacity = 1;

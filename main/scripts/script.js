@@ -53,7 +53,7 @@ var mymap = L.map('map', {
     Zoom: 5,
     maxNativeZoom: 5,
     preferCanvas: true,
-    layers: [SateliteStyle, Icons["Coords"]],
+    layers: [SateliteStyle],
     center: [0, 0],
     zoom: 3,
 });

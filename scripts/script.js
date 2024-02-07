@@ -30,6 +30,7 @@ var CoordsGroup = L.layerGroup();
 var PortofLS = L.layerGroup();
 var WestLSDocks = L.layerGroup();
 var LSMarine = L.layerGroup();
+var GrapeseedAirfield = L.layerGroup();
 var PortofRocksWood = L.layerGroup();
 var CatfishView = L.layerGroup();
 var WarehouseLocations = L.layerGroup();
@@ -38,6 +39,7 @@ var Icons = {
     "Port of Los Santos" :PortofLS,
     "West LS Docks" :WestLSDocks,
     "Los Santos Marine" :LSMarine,
+    "Grapeseed Airfield" :GrapeseedAirfield,
     "Catfish View" :CatfishView,
     "Port of Roxwood": PortofRocksWood,
 	"Coords" :CoordsGroup,
@@ -183,4 +185,16 @@ L.polygon([
 
 L.marker([4479.573,3801.279]).addTo(Icons["Catfish View"]).bindPopup("Catfish View Crate");
 
-// Port of Roxwoods
+// Grapeseed Airfield
+L.polygon([
+    [4782.927, 2163.369],
+    [4830.183, 2164.877],
+    [4850.000, 2127.172],
+    [4738.720, 1902.449],
+    [4708.232, 1911.499],
+    [4782.927, 2063.827],
+    [4779.878, 2077.401],
+    [4761.585, 2095.500]
+], {color: "#FF8000", weight: 4}).addTo(Icons["Grapeseed Airfield"]).bindPopup('Grapeseed Airfield');
+
+L.marker([4796.646, 2125.664]).addTo(Icons["Grapeseed Airfield"]).bindPopup("Grapeseed Airfield Crate");

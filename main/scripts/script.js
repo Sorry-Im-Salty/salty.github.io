@@ -138,6 +138,10 @@ L.polygon(
 )
   .addTo(Icons["Warehouses"])
   .bindPopup("Possible Area of Underdogs Warehouse");
+
+L.marker([-332.927, -1819.8])
+  .addTo(Icons["Warehouses"])
+  .bindPopup("Brothers MC Warehouse");
 // Port of Los Santos Crate Locations
 L.polygon(
   [

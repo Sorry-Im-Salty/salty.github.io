@@ -241,6 +241,9 @@ L.polygon(
   .addTo(Icons["Los Santos Marine"])
   .bindPopup("Los Santos Marine");
 
+L.marker([-2621.037, -313.103])
+  .addTo(Icons["Los Santos Marine"])
+  .bindPopup("Los Santos Marine Crate");
 // Catfish Docks
 
 L.polygon(

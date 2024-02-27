@@ -53,6 +53,7 @@ var GrapeseedAirfield = L.layerGroup();
 var PortofRocksWood = L.layerGroup();
 var CatfishView = L.layerGroup();
 var WarehouseLocations = L.layerGroup();
+var OldWarehouseLocations = L.layerGroup();
 
 var Icons = {
   "Port of Los Santos": PortofLS,
@@ -63,6 +64,7 @@ var Icons = {
   "Port of Roxwood": PortofRocksWood,
   Coords: CoordsGroup,
   Warehouses: WarehouseLocations,
+  "Warehouses - Old": OldWarehouseLocations,
 };
 
 var mymap = L.map("map", {
@@ -111,16 +113,12 @@ mymap.on("click", function (e) {
 });
 
 // Warehouse Locations
-
 L.marker([2822.561, -88.381])
   .addTo(Icons["Warehouses"])
   .bindPopup("Slovaks Warehouse");
 L.marker([-2304.726, 1086.028])
   .addTo(Icons["Warehouses"])
   .bindPopup("Sinners Warehouse");
-L.marker([6299.925, 0.648])
-  .addTo(Icons["Warehouses"])
-  .bindPopup("Blackhand Warehouse (Old)");
 L.marker([-1287.195, -335.726])
   .addTo(Icons["Warehouses"])
   .bindPopup("Ufasele Warehouse");
@@ -134,14 +132,43 @@ L.polygon(
     [4453.659, 2893.34],
     [4269.207, 2952.16],
   ],
-  { color: "#FF2D00", weight: 4 }
+  { color: "#00FFFF", weight: 4 }
 )
   .addTo(Icons["Warehouses"])
   .bindPopup("Possible Area of Underdogs Warehouse");
 
+// Old Warehouse Locations
+L.marker([6299.925, 0.648])
+  .addTo(Icons["Warehouses - Old"])
+  .bindPopup("Old - Blackhand Warehouse (DATE)");
+  L.polygon(
+    [
+      [6322.561, -17.495],
+      [6359.146, 56.407],
+      [6334.756, 72.997],
+      [6289.024, -5.430],
+    ],
+    { color: "#006400", weight: 4 }
+  )
+    .addTo(Icons["Warehouses - Old"])
+    .bindPopup("Old - Blackhand Warehouse (DATE)");
+
+
 L.marker([-332.927, -1819.8])
-  .addTo(Icons["Warehouses"])
-  .bindPopup("Brothers MC Warehouse");
+  .addTo(Icons["Warehouses - Old"])
+  .bindPopup("Old - Brothers MC Warehouse (26/02/2024)");
+L.polygon(
+  [
+    [-275, -1878.620],
+    [-351.220, -1791.144],
+    [-396.951, -1812.259],
+    [-332.927, -1889.177],
+  ],
+  { color: "#ff0000", weight: 4 }
+)
+  .addTo(Icons["Warehouses - Old"])
+  .bindPopup("Old - Brothers MC Warehouse (26/02/2024)");
+
 // Port of Los Santos Crate Locations
 L.polygon(
   [
@@ -248,8 +275,8 @@ L.polygon(
 L.marker([-2621.037, -313.103])
   .addTo(Icons["Los Santos Marine"])
   .bindPopup("Los Santos Marine Crate");
-// Catfish Docks
 
+  // Catfish Docks
 L.polygon(
   [
     [4546.646, 3801.279],

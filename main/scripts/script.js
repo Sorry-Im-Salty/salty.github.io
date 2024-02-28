@@ -116,15 +116,59 @@ mymap.on("click", function (e) {
 L.marker([2822.561, -88.381])
   .addTo(Icons["Warehouses"])
   .bindPopup("Slovaks Warehouse");
+  L.polygon(
+    [
+      [2843.902, -124.578],
+      [2821.037, -71.791],
+      [2792.073, -77.823],
+      [2801.220, -127.594],
+    ],
+    { color: "#818589", weight: 4 }
+  )
+    .addTo(Icons["Warehouses"])
+
 L.marker([-2304.726, 1086.028])
   .addTo(Icons["Warehouses"])
   .bindPopup("Sinners Warehouse");
-L.marker([-1287.195, -335.726])
+  L.polygon(
+    [
+      [-2279.573, 1054.838],
+      [-2281.098, 1088.019],
+      [-2326.829, 1083.494],
+      [-2319.207, 1051.822],
+    ],
+    { color: "#800080", weight: 4 }
+  )
+    .addTo(Icons["Warehouses"])
+
+L.marker([-1284.146, -322.153])
   .addTo(Icons["Warehouses"])
   .bindPopup("Ufasele Warehouse");
+  L.polygon(
+    [
+      [-1268.902, -320.644],
+      [-1270.427, -288.972],
+      [-1307.012, -290.480],
+      [-1307.012, -322.153],
+    ],
+    { color: "#00FF00", weight: 4 }
+  )
+    .addTo(Icons["Warehouses"])
+
 L.marker([4278.354, -2181.769])
   .addTo(Icons["Warehouses"])
   .bindPopup("Possible Saints Warehouse");
+  L.polygon(
+    [
+      [4336.280, -2175.736],
+      [4305.793, -2136.523],
+      [4228.049, -2187.802],
+      [4257.012, -2225.507],
+    ],
+    { color: "#DAF7A6", weight: 4 }
+  )
+    .addTo(Icons["Warehouses"])
+
 L.polygon(
   [
     [4241.768, 2872.225],
@@ -140,7 +184,7 @@ L.polygon(
 // Old Warehouse Locations
 L.marker([6299.925, 0.648])
   .addTo(Icons["Warehouses - Old"])
-  .bindPopup("Old - Blackhand Warehouse (DATE)");
+  .bindPopup("Old - Blackhand Warehouse (03/02/2024)");
   L.polygon(
     [
       [6322.561, -17.495],
@@ -151,7 +195,6 @@ L.marker([6299.925, 0.648])
     { color: "#006400", weight: 4 }
   )
     .addTo(Icons["Warehouses - Old"])
-    .bindPopup("Old - Blackhand Warehouse (DATE)");
 
 
 L.marker([-332.927, -1819.8])
@@ -167,7 +210,6 @@ L.polygon(
   { color: "#ff0000", weight: 4 }
 )
   .addTo(Icons["Warehouses - Old"])
-  .bindPopup("Old - Brothers MC Warehouse (26/02/2024)");
 
 // Port of Los Santos Crate Locations
 L.polygon(

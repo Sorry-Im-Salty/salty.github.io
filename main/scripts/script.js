@@ -181,6 +181,20 @@ L.polygon(
   .addTo(Icons["Warehouses"])
   .bindPopup("Possible Area of Underdogs Warehouse");
 
+L.marker([1593.902, 2448.419])
+  .addTo(Icons["Warehouses"])
+  .bindPopup("Possible Outlaws Warehouse");
+  L.polygon(
+    [
+      [1618.293, 2415.239],
+      [1616.768, 2486.125],
+      [1569.512, 2489.141],
+      [1569.512, 2416.747],
+    ],
+    { color: "#7EC8E3", weight: 4 }
+  )
+    .addTo(Icons["Warehouses"])
+
 // Old Warehouse Locations
 L.marker([6299.925, 0.648])
   .addTo(Icons["Warehouses - Old"])

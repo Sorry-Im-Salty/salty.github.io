@@ -52,6 +52,7 @@ var LSMarine = L.layerGroup();
 var GrapeseedAirfield = L.layerGroup();
 var PortofRocksWood = L.layerGroup();
 var CatfishView = L.layerGroup();
+var VespucciBeach = L.layerGroup();
 var WarehouseLocations = L.layerGroup();
 var OldWarehouseLocations = L.layerGroup();
 
@@ -62,9 +63,11 @@ var Icons = {
   "Grapeseed Airfield": GrapeseedAirfield,
   "Catfish View": CatfishView,
   "Port of Roxwood": PortofRocksWood,
+  "Vespucci Beach": VespucciBeach,
   Coords: CoordsGroup,
   Warehouses: WarehouseLocations,
   "Warehouses - Old": OldWarehouseLocations,
+
 };
 
 var mymap = L.map("map", {
@@ -266,6 +269,9 @@ L.marker([-3044.817, 997.527])
 L.marker([-3342.073, 1214.708])
   .addTo(Icons["Port of Los Santos"])
   .bindPopup("Port of Los Santos Crate");
+  L.marker([-2988.415, 448.540])
+  .addTo(Icons["Port of Los Santos"])
+  .bindPopup("Port of Los Santos Crate");
 
 // West LS Docks
 L.polygon(
@@ -369,3 +375,31 @@ L.polygon(
 L.marker([4796.646, 2125.664])
   .addTo(Icons["Grapeseed Airfield"])
   .bindPopup("Grapeseed Airfield Crate");
+
+
+// Vespucci Beach
+L.polygon(
+  [
+    [-1143.902, -1623.733],
+    [-1159.146, -1598.094],
+    [-1191.149, -1595.077],
+    [-1220.122, -1576.979],
+    [-1265.954, -1542.290],
+    [-1428.963, -1489.503],
+    [-1467.073, -1481.962],
+    [-1453.354, -1495.536],
+    [-1460.976, -1507.601],
+    [-1532.622, -1469.896],
+    [-1525.000, -1459.339],
+    [-1505.183, -1465.372],
+    [-1515.854, -1448.781],
+    [-1656.098, -1380.912],
+    [-1802.439, -1278.354],
+    [-1874.085, -1240.649],
+    [-1860.366, -1204.425],
+    [-1114.939, -1601.110],
+  ],
+  { color: "#FF2D00", weight: 4 }
+)
+  .addTo(Icons["Vespucci Beach"])
+  .bindPopup("Vespucci Beach");

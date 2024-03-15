@@ -353,7 +353,23 @@ L.polygon(
 
 L.marker([4479.573, 3801.279])
   .addTo(Icons["Catfish View"])
-  .bindPopup("Catfish View Crate");
+  .bindPopup("Catfish View Docks Crate");
+
+  L.polygon(
+    [
+      [5154.878, 3253.801],
+      [5148.780, 3329.211],
+      [5199.085, 3348.818],
+      [5234.146, 3243.243],
+    ],
+    { color: "#FF2D00", weight: 4 }
+  )
+    .addTo(Icons["Catfish View"])
+    .bindPopup("Catfish View Lighthouse");
+
+  L.marker([5171.646, 3299.047])
+    .addTo(Icons["Catfish View"])
+    .bindPopup("Catfish View Lighthouse Crate");
 
 // Grapeseed Airfield
 L.polygon(

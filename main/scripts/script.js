@@ -49,7 +49,7 @@ var CoordsGroup = L.layerGroup();
 var PortofLS = L.layerGroup();
 var WestLSDocks = L.layerGroup();
 var LSMarine = L.layerGroup();
-var GrapeseedAirfield = L.layerGroup();
+var Grapeseed = L.layerGroup();
 var PortofRocksWood = L.layerGroup();
 var CatfishView = L.layerGroup();
 var VespucciBeach = L.layerGroup();
@@ -60,7 +60,7 @@ var Icons = {
   "Port of Los Santos": PortofLS,
   "West LS Docks": WestLSDocks,
   "Los Santos Marine": LSMarine,
-  "Grapeseed Airfield": GrapeseedAirfield,
+  "Grapeseed": Grapeseed,
   "Catfish View": CatfishView,
   "Port of Roxwood": PortofRocksWood,
   "Vespucci Beach": VespucciBeach,
@@ -371,26 +371,59 @@ L.marker([4479.573, 3801.279])
     .addTo(Icons["Catfish View"])
     .bindPopup("Catfish View Lighthouse Crate");
 
-// Grapeseed Airfield
+// Grapeseed
 L.polygon(
   [
-    [4782.927, 2163.369],
-    [4830.183, 2164.877],
-    [4850.0, 2127.172],
-    [4738.72, 1902.449],
-    [4708.232, 1911.499],
-    [4782.927, 2063.827],
-    [4779.878, 2077.401],
-    [4761.585, 2095.5],
+    [5139.634, 2585.666],
+    [5125.915, 2525.338],
+    [5138.110, 2478.583],
+    [5194.512, 2392.616],
+    [5246.341, 2383.567],
+    [5264.634, 2351.894],
+    [5217.378, 2279.500],
+    [5253.963, 2185.992],
+    [5257.012, 2095.500],
+    [5232.622, 2036.680],
+    [5171.646, 1961.269],
+    [5183.841, 1934.122],
+    [5011.585, 1716.940],
+    [4978.049, 1662.645],
+    [4950.610, 1650.579],
+    [4924.695, 1629.464],
+    [4676.220, 1647.563],
+    [4651.829, 1686.776],
+    [4601.524, 1733.530],
+    [4531.402, 1748.612],
+    [4528.354, 1777.268],
+    [4558.841, 1811.957],
+    [4592.378, 1837.597],
+    [4555.793, 1860.220],
+    [4539.024, 1902.449],
+    [4564.939, 1994.450],
+    [4590.854, 2093.991],
+    [4624.390, 2116.614],
+    [4665.549, 2125.664],
+    [4668.598, 2267.435],
+    [4642.683, 2265.927],
+    [4604.573, 2208.615],
+    [4584.756, 2216.156],
+    [4618.293, 2324.747],
+    [4628.963, 2397.140],
+    [4682.317, 2455.960],
+    [4882.012, 2650.519],
   ],
   { color: "#FF2D00", weight: 4 }
 )
-  .addTo(Icons["Grapeseed Airfield"])
-  .bindPopup("Grapeseed Airfield");
+  .addTo(Icons["Grapeseed"])
+  .bindPopup("Grapeseed");
 
 L.marker([4796.646, 2125.664])
-  .addTo(Icons["Grapeseed Airfield"])
-  .bindPopup("Grapeseed Airfield Crate");
+  .addTo(Icons["Grapeseed"])
+  .bindPopup("Grapeseed Airfield");
+
+L.marker([5042.073, 2407.698])
+  .addTo(Icons["Grapeseed"])
+  .bindPopup("O'Neil Ranch");
 
 
 // Vespucci Beach

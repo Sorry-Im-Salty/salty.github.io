@@ -116,6 +116,20 @@ mymap.on("click", function (e) {
 });
 
 // Warehouse Locations
+L.marker([-1811.585, -542.350])
+  .addTo(Icons["Warehouses"])
+  .bindPopup("Brothers MC Warehouse");
+L.polygon(
+  [
+    [-1747.561, -583.072],
+    [-1793.293, -513.694],
+    [-1826.829, -531.793],
+    [-1782.622, -631.334],
+  ],
+  { color: "#ff0000", weight: 4 }
+)
+  .addTo(Icons["Warehouses"])
+
 L.marker([2822.561, -88.381])
   .addTo(Icons["Warehouses"])
   .bindPopup("Slovaks Warehouse");
@@ -183,6 +197,18 @@ L.polygon(
 )
   .addTo(Icons["Warehouses"])
   .bindPopup("Possible Area of Underdogs Warehouse");
+
+L.polygon(
+    [
+      [3728.049, 3428.752],
+      [3696.037, 3587.114],
+      [3627.439, 3576.556],
+      [3662.500, 3395.572],
+    ],
+    { color: "#00FFFF", weight: 4 }
+  )
+    .addTo(Icons["Warehouses"])
+    .bindPopup("Possible Area of Underdogs Warehouse");
 
 L.marker([1593.902, 2448.419])
   .addTo(Icons["Warehouses"])

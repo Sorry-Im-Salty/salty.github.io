@@ -54,6 +54,7 @@ var Paleto = L.layerGroup();
 var PortofRocksWood = L.layerGroup();
 var CatfishView = L.layerGroup();
 var VespucciBeach = L.layerGroup();
+var AltaStreet = L.layerGroup();
 var WarehouseLocations = L.layerGroup();
 var OldWarehouseLocations = L.layerGroup();
 
@@ -66,6 +67,7 @@ var Icons = {
   "Catfish View": CatfishView,
   "Port of Roxwood": PortofRocksWood,
   "Vespucci Beach": VespucciBeach,
+  "Alta Street": AltaStreet,
   Coords: CoordsGroup,
   Warehouses: WarehouseLocations,
   "Warehouses - Old": OldWarehouseLocations,
@@ -300,6 +302,27 @@ L.marker([-3342.073, 1214.708])
   L.marker([-2988.415, 448.540])
   .addTo(Icons["Port of Los Santos"])
   .bindPopup("Port of Los Santos Crate");
+
+  // Alta Street Crate Locations
+L.polygon(
+  [
+    [-1685.061, -394.546],
+    [-1666.768, -444.317],
+    [-1692.683, -469.957],
+    [-1709.451, -497.104],
+    [-1727.744, -530.285],
+    [-1736.890, -552.908],
+    [-1759.756, -518.219],
+    [-1776.524, -468.448],
+    [-1765.854, -423.202],
+  ],
+  { color: "#FF2D00", weight: 4 }
+)
+  .addTo(Icons["Alta Street"])
+  .bindPopup("Alta Street");
+L.marker([-1701.829, -459.399])
+  .addTo(Icons["Alta Street"])
+  .bindPopup("Alta Street Crate");
 
 // West LS Docks
 L.polygon(

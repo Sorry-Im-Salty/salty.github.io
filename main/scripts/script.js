@@ -49,9 +49,10 @@ var CoordsGroup = L.layerGroup();
 var PortofLS = L.layerGroup();
 var WestLSDocks = L.layerGroup();
 var LSMarine = L.layerGroup();
+var PalominoBay = L.layerGroup();
 var Grapeseed = L.layerGroup();
 var Paleto = L.layerGroup();
-var PortofRocksWood = L.layerGroup();
+var PaletoForest = L.layerGroup();
 var CatfishView = L.layerGroup();
 var VespucciBeach = L.layerGroup();
 var AltaStreet = L.layerGroup();
@@ -62,10 +63,11 @@ var Icons = {
   "Port of Los Santos": PortofLS,
   "West LS Docks": WestLSDocks,
   "Los Santos Marine": LSMarine,
+  "Palomino Bay": PalominoBay,
   "Grapeseed": Grapeseed,
   "Paleto": Paleto,
+  "Paleto Forest": PaletoForest,
   "Catfish View": CatfishView,
-  "Port of Roxwood": PortofRocksWood,
   "Vespucci Beach": VespucciBeach,
   "Alta Street": AltaStreet,
   Coords: CoordsGroup,
@@ -303,7 +305,7 @@ L.marker([-3342.073, 1214.708])
   .addTo(Icons["Port of Los Santos"])
   .bindPopup("Port of Los Santos Crate");
 
-  // Alta Street Crate Locations
+// Alta Street Crate Locations
 L.polygon(
   [
     [-1685.061, -394.546],
@@ -323,6 +325,24 @@ L.polygon(
 L.marker([-1701.829, -459.399])
   .addTo(Icons["Alta Street"])
   .bindPopup("Alta Street Crate");
+
+// Palomino Bay
+L.polygon(
+  [
+    [-878.659, 2751.569],
+    [-828.354, 2825.471],
+    [-621.037, 2837.536],
+    [-488.415, 2882.782],
+    [-464.024, 2662.584],
+    [-828.354, 2546.453],
+  ],
+  { color: "#FF2D00", weight: 4 }
+)
+  .addTo(Icons["Palomino Bay"])
+  .bindPopup("Palomino Bay");
+L.marker([-578.354, 2799.831])
+  .addTo(Icons["Palomino Bay"])
+  .bindPopup("Palomino Bay Crate");
 
 // West LS Docks
 L.polygon(
@@ -416,6 +436,29 @@ L.polygon(
 L.marker([6487.195, 433.458])
   .addTo(Icons["Paleto"])
   .bindPopup("Paleto Crates");
+
+// Paleto Forest
+L.polygon(
+  [
+    [5862.195, -394.546],
+    [5883.537, -690.154],
+    [5752.439, -751.991],
+    [5752.439, -795.729],
+    [5764.634, -872.647],
+    [5642.683, -868.123],
+    [5552.744, -901.303],
+    [5328.659, -1043.074],
+    [4932.317, -584.580],
+    [5160.976, -456.383],
+  ],
+  { color: "#FF2D00", weight: 4 }
+)
+  .addTo(Icons["Paleto Forest"])
+  .bindPopup("Paleto Forest");
+
+L.marker([5301.220, -561.957])
+  .addTo(Icons["Paleto Forest"])
+  .bindPopup("Paleto Forest Crates");
 
 // Los Santos Marine
 L.polygon(

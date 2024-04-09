@@ -48,6 +48,7 @@ var SateliteStyle = L.tileLayer("mapStyles/styleSatelite/{z}/{x}/{y}.jpg", {
 var CoordsGroup = L.layerGroup();
 var PortofLS = L.layerGroup();
 var WestLSDocks = L.layerGroup();
+var DutchLondonBay = L.layerGroup();
 var LSMarine = L.layerGroup();
 var PalominoBay = L.layerGroup();
 var Grapeseed = L.layerGroup();
@@ -62,6 +63,7 @@ var OldWarehouseLocations = L.layerGroup();
 var Icons = {
   "Port of Los Santos": PortofLS,
   "West LS Docks": WestLSDocks,
+  "Dutch London Bay": DutchLondonBay,
   "Los Santos Marine": LSMarine,
   "Palomino Bay": PalominoBay,
   "Grapeseed": Grapeseed,
@@ -325,6 +327,28 @@ L.polygon(
 L.marker([-1701.829, -459.399])
   .addTo(Icons["Alta Street"])
   .bindPopup("Alta Street Crate");
+
+// Dutch London Bay
+L.polygon(
+  [
+    [-1523.476, -768.581],
+    [-1525.000, -758.024],
+    [-1543.293, -750.483],
+    [-1526.524, -712.778],
+    [-1508.232, -706.745],
+    [-1483.841, -693.171],
+    [-1448.780, -664.515],
+    [-1335.976, -661.499],
+    [-1343.598, -682.613],
+    [-1470.122, -792.712],
+  ],
+  { color: "#FF2D00", weight: 4 }
+)
+  .addTo(Icons["Dutch London Bay"])
+  .bindPopup("Dutch London Bay");
+L.marker([-1482.317, -770.089])
+  .addTo(Icons["Dutch London Bay"])
+  .bindPopup("Dutch London Bay Crate");
 
 // Palomino Bay
 L.polygon(

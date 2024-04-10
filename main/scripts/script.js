@@ -55,6 +55,7 @@ var Grapeseed = L.layerGroup();
 var Paleto = L.layerGroup();
 var PaletoForest = L.layerGroup();
 var CatfishView = L.layerGroup();
+var SenoraFreeway = L.layerGroup();
 var VespucciBeach = L.layerGroup();
 var AltaStreet = L.layerGroup();
 var WarehouseLocations = L.layerGroup();
@@ -70,6 +71,7 @@ var Icons = {
   "Paleto": Paleto,
   "Paleto Forest": PaletoForest,
   "Catfish View": CatfishView,
+  "Senora Freeway": SenoraFreeway,
   "Vespucci Beach": VespucciBeach,
   "Alta Street": AltaStreet,
   Coords: CoordsGroup,
@@ -180,6 +182,20 @@ L.marker([-1284.146, -322.153])
   )
     .addTo(Icons["Warehouses"])
 
+  L.marker([-598.171, -545.367])
+    .addTo(Icons["Warehouses"])
+    .bindPopup("Gencorp Warehouse");
+    L.polygon(
+      [
+        [-564.634, -495.596],
+        [-628.659, -494.088],
+        [-630.183, -595.138],
+        [-564.634, -602.679],
+      ],
+      { color: "#0E86D4", weight: 4 }
+    )
+      .addTo(Icons["Warehouses"])
+
 L.marker([4278.354, -2181.769])
   .addTo(Icons["Warehouses"])
   .bindPopup("Possible Saints Warehouse");
@@ -195,18 +211,6 @@ L.marker([4278.354, -2181.769])
     .addTo(Icons["Warehouses"])
 
 L.polygon(
-  [
-    [4241.768, 2872.225],
-    [4426.22, 2817.93],
-    [4453.659, 2893.34],
-    [4269.207, 2952.16],
-  ],
-  { color: "#00FFFF", weight: 4 }
-)
-  .addTo(Icons["Warehouses"])
-  .bindPopup("Possible Area of Underdogs Warehouse");
-
-L.polygon(
     [
       [3728.049, 3428.752],
       [3696.037, 3587.114],
@@ -216,7 +220,7 @@ L.polygon(
     { color: "#00FFFF", weight: 4 }
   )
     .addTo(Icons["Warehouses"])
-    .bindPopup("Possible Area of Underdogs Warehouse");
+    .bindPopup("Underdogs Warehouse");
 
 L.marker([1593.902, 2448.419])
   .addTo(Icons["Warehouses"])
@@ -612,6 +616,24 @@ L.marker([4796.646, 2125.664])
 L.marker([5042.073, 2407.698])
   .addTo(Icons["Grapeseed"])
   .bindPopup("O'Neil Ranch");
+
+// Senora Freeway
+L.polygon(
+  [
+    [3028.354, 3210.063],
+    [3168.598, 2728.945],
+    [2775.305, 2463.501],
+    [2590.854, 2748.552],
+    [2596.951, 3090.915],
+  ],
+  { color: "#FF2D00", weight: 4 }
+)
+  .addTo(Icons["Senora Freeway"])
+  .bindPopup("Senora Freeway");
+
+L.marker([2810.366, 2934.061])
+  .addTo(Icons["Senora Freeway"])
+  .bindPopup("Senora Freeway Quary Crate");
 
 
 // Vespucci Beach
